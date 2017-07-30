@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:fillViewport="true"
+    android:background="@drawable/patternone"
+    tools:context="com.themagicofmusic.beatrecognizer.PersonDetailActivity">
+    <!-- <ListView
+         android:layout_width="match_parent"
+         android:id="@+id/listView"
+         android:layout_height="wrap_content">
+
+        </ListView>
+ -->
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:paddingTop="5dip"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dip">
+        <!-- Logo Start-->
+        <!--
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imageupload"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:src="@mipmap/ic_account_circle_black_24dp"
+                    android:layout_marginTop="5dip"
+
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
+                    -->
+        <!--Logo Ends -->
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Register"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/header">
+
+        <TextView
+            android:id="@+id/fullName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:gravity="left"
+            android:text="Full Name"
+            android:textColor="@color/font" />
+
+        <TextView
+            android:id="@+id/editName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dip"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/font"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/editMusicName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:text="Hobby"
+            android:textColor="@color/font" />
+
+        <TextView
+            android:id="@+id/editHobby"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:ems="10"
+
+            android:inputType="text"
+
+            android:textColor="@color/font"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/issue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contact"
+            android:layout_marginTop="20dp"
+            android:text="Issue"
+            android:textColor="@color/font" />
+
+        <TextView
+            android:id="@+id/editIssue"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="20dip"
+
+            android:ems="10"
+
+            android:inputType="phone"
+            android:textColor="@color/font"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:background="@color/button"
+            android:id="@+id/buttonupdate"
+            android:layout_marginTop="20dip"
+            android:textSize="20dp"
+
+            android:textStyle="bold"
+            android:layout_below="@+id/editText2"
+            android:layout_centerHorizontal="true" />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

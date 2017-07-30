@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.themagicofmusic.beatrecognizer.PersonProfileActivity">
+    <!-- <ListView
+         android:layout_width="match_parent"
+         android:id="@+id/listView"
+         android:layout_height="wrap_content">
+
+        </ListView>
+ -->
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:paddingTop="5dip"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dip">
+        <!-- Logo Start-->
+        <!--
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imageupload"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:src="@mipmap/ic_account_circle_black_24dp"
+                    android:layout_marginTop="5dip"
+
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
+                    -->
+        <!--Logo Ends -->
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Register"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/header">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:layout_marginTop="20dip"
+            android:textColor="@color/font"
+            android:id="@+id/email"
+            android:gravity="left"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/font"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/fullnameeditText"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textColor="@color/font"
+            android:layout_marginTop="20dp"
+            android:id="@+id/email1"
+            android:gravity="left"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:textColor="@color/font"
+            android:textSize="20dp"
+
+            android:textStyle="bold"
+
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/emaileditText"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="@color/font"
+            android:id="@+id/password1"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:textColor="@color/font"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dip"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/passwordedittext"
+            />
+
+        <!--
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textColor="@color/font"
+                        android:layout_marginTop="5dip"
+
+                        android:id="@+id/Gender"
+                        android:gravity="left"
+                        />
+                    <RadioGroup
+                        android:id="@+id/radioGender1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/password"
+                        android:layout_marginLeft="30dp"
+
+
+                        android:orientation="horizontal">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:layout_marginTop="3dip"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="@color/font"
+                            android:id="@+id/radioButton1"
+                            android:textSize="20dp"
+                            android:checked="true"
+                            android:textStyle="bold"
+                            android:layout_below="@+id/Gender"
+                            android:layout_alignLeft="@+id/button"
+                            android:layout_alignStart="@+id/button" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            android:layout_marginTop="3dip"
+                            android:textColor="@color/font"
+                            android:layout_marginLeft="30dp"
+                            android:id="@+id/radioButton2"
+                            android:checked="false"
+                            android:value="female"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_alignRight="@+id/button"
+                            android:layout_alignEnd="@+id/button" />
+                    </RadioGroup>
+                </LinearLayout>
+                -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/font"
+                android:id="@+id/birth"
+                />
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="date"
+                android:ems="10"
+                android:textSize="20dp"
+
+                android:textStyle="bold"
+
+                android:textColor="@color/font"
+                android:id="@+id/birthmode"
+                android:layout_marginTop="20dip"
+                android:layout_marginLeft="28dp"
+                android:layout_below="@+id/radioButton2"
+                />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/birth"
+            android:text="Mobile No"
+            android:textColor="@color/font"
+            android:id="@+id/contact"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="15dip"
+            android:inputType="phone"
+
+            android:textSize="20dp"
+
+            android:textStyle="bold"
+            android:textColor="@color/font"
+            android:ems="10"
+            android:id="@+id/mobilemode"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/contact"
+            android:text="Location"
+            android:textColor="@color/font"
+            android:id="@+id/loc"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="15dip"
+            android:inputType="phone"
+
+            android:textSize="20dp"
+
+            android:textStyle="bold"
+            android:textColor="@color/font"
+            android:ems="10"
+            android:id="@+id/locationmode"
+            />
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:background="@color/button"
+            android:id="@+id/buttonupdate"
+            android:layout_marginTop="20dip"
+            android:textSize="20dp"
+
+            android:textStyle="bold"
+            android:layout_below="@+id/editText2"
+            android:layout_centerHorizontal="true" />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Atharva\App\BeatRecognizer\app\libs\gnsdk_helpers.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0ffbc5d0a8ab301f9a3b5641eb44263f0656bd2e">
+        <dex dex="C:\Atharva\App\BeatRecognizer\app\build\intermediates\pre-dexed\release\gnsdk_helpers_7310a636459934b173869fd29d416353228775eb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Atharva\App\BeatRecognizer\app\libs\jaudiotagger-2.2.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f2beba500449b3a31fbbec1b9925a3206fe0c36d">
+        <dex dex="C:\Atharva\App\BeatRecognizer\app\build\intermediates\pre-dexed\release\jaudiotagger-2.2.3_033a0a4523b52e40ca288320e68b26e7f45094cd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Atharva\App\BeatRecognizer\app\libs\gnsdk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4c73bc3725c7e9e05f02cddc23a600c1143b53cc">
+        <dex dex="C:\Atharva\App\BeatRecognizer\app\build\intermediates\pre-dexed\release\gnsdk_1005cf1ce6e915848e2c2e9cba386c313d03d60f.jar" />
+    </item>
+
+</items>

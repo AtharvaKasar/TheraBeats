@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">TheraBeats</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_display_beats">Display Beats</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_person_profile">Person Profile</string>
+    <string name="title_activity_add_person">Add Person</string>
+    <string name="title_activity_add_beat_type">AddBeatType</string>
+    <string name="title_activity_add_music">AddMusic</string>
+    <string name="title_activity_music_detail">Music Detail</string>
+    <string name="title_activity_display_music_recommendation">Music Recommendations</string>
+    <string name="title_activity_display_journal">Display Journal</string>
+    <string name="title_activity_display_favorite_music">Display Favorite Music</string>
+    <string name="title_activity_add_journal">Add Journal</string>
+    <string name="title_activity_dashboard2">My Dashboard</string>
+
+    <string name="title_activity_music_feature">Music Feature</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_display_play_store_music">Display PlayStore Music</string>
+
+    <string-array name="issue_arrays">
+        <item>Mild</item>
+        <item>Medium</item>
+        <item>Severe</item>
+    </string-array>
+    <string-array name="beattype_arrays">
+        <item>Soft</item>
+        <item>Hard</item>
+        <item>Light</item>
+    </string-array>
+    <string name="title_activity_journal_detail">Journal Detail</string>
+    <string name="title_activity_display_youtube">DisplayYoutubeActivity</string>
+    <string name="title_activity_display_videos">DisplayVideos</string>
+</resources>

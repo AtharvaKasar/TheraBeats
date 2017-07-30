@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/patternone"
+    tools:context="com.themagicofmusic.beatrecognizer.PlayMusicActivity">
+    <RelativeLayout
+        android:layout_width="369dp"
+        android:layout_height="360dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="45dp"
+            android:onClick="btnPlayMusicClick"
+            android:text="Play Music"
+            tools:layout_editor_absoluteX="77dp"
+            tools:layout_editor_absoluteY="88dp" />
+
+    <TextView
+        android:id="@+id/textMusicName"
+        android:layout_width="173dp"
+        android:layout_height="21dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="31dp"
+        android:layout_above="@+id/btnPlay"
+        android:layout_alignRight="@+id/btnWatchVideo"
+        android:layout_alignEnd="@+id/btnWatchVideo" />
+
+    <Button
+        android:id="@+id/btnWatchVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnPlayAutismVideoClick"
+        android:text="Watch Video"
+        tools:layout_editor_absoluteX="209dp"
+        tools:layout_editor_absoluteY="88dp"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/btnPlay"
+        android:layout_alignLeft="@+id/btnPlay"
+        android:layout_alignStart="@+id/btnPlay" />
+
+        <Button
+            android:id="@+id/btnDisplayFeature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="31dp"
+            android:onClick="btnExtractMusicFeatureClick"
+            android:text="Display Feature"
+            android:layout_below="@+id/btnWatchVideo"
+            android:layout_alignLeft="@+id/btnWatchVideo"
+            android:layout_alignStart="@+id/btnWatchVideo" />
+
+        <Button
+            android:id="@+id/btnPlayStoreMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnDisplayFeature"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/btnDisplayFeature"
+            android:onClick="btnDisplayPlayStoreMusicClick"
+            android:text="Play Store music" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

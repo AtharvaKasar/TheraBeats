@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#990033</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="font">#000000</color>
+    <color name="font1">#ff0000</color>
+    <color name="button">#808000</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="light_gray">#808000</color>
+    <color name="very_dark_gray">#808000</color>
+    <color name="gracenote_red">#808000</color>
+    <color name="colored_ring">#808000</color>
+    <color name="dark_gray">#808000</color>
+</resources>

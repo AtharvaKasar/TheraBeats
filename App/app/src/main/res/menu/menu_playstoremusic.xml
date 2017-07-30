@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Play_Music"
+        android:orderInCategory="100"
+        android:title="Play"/>
+
+
+    <item
+        android:id="@+id/Main"
+        android:orderInCategory="100"
+        android:title="Dashboard"/>
+
+</menu>

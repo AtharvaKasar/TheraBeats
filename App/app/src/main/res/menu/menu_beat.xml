@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Edit_Beat"
+        android:orderInCategory="100"
+        android:title="Edit"/>
+
+    <item
+        android:id="@+id/Delete_Beat"
+        android:orderInCategory="100"
+        android:title="Delete"/>
+
+    <item
+        android:id="@+id/Add_Beat"
+        android:orderInCategory="100"
+        android:title="Add"/>
+    <item
+        android:id="@+id/Main"
+        android:orderInCategory="100"
+        android:title="Dashboard"/>
+</menu>

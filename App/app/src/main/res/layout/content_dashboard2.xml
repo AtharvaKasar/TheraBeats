@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/patternone"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.themagicofmusic.beatrecognizer.Dashboard2Activity"
+    tools:showIn="@layout/activity_dashboard2">
+
+
+
+    <RelativeLayout
+        android:layout_width="366dp"
+        android:layout_height="449dp"
+        android:layout_marginTop="6dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="9dp">
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnMusic"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/btnMusic"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/buttonstyle"
+            android:onClick="btnDisplayVideosClick"
+            android:text="Show Videos"
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <Button
+            android:id="@+id/btnMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/btnPlay"
+            android:layout_marginLeft="29dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/buttonstyle"
+            android:onClick="btnMusicClick"
+            android:text="Show Music"
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="64dp" />
+
+        <Button
+            android:id="@+id/btnDisplayFavMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnMusic"
+            android:layout_alignStart="@+id/btnMusic"
+            android:layout_centerVertical="true"
+            android:background="@drawable/buttonstyle"
+            android:onClick="btnDisplayFavoriteMusicClick"
+            android:text="Show Favorite Music"
+            tools:layout_editor_absoluteX="80dp"
+            tools:layout_editor_absoluteY="64dp" />
+
+        <Button
+            android:id="@+id/btnRecommendation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstyle"
+            android:onClick="btnSuggestMusicRecommendationClick"
+            android:text="Recommendation"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_above="@+id/btnMusic"
+            android:layout_toRightOf="@+id/btnPlay"
+            android:layout_toEndOf="@+id/btnPlay" />
+
+        <Button
+            android:id="@+id/btnDisplayRecommendation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstyle"
+            android:onClick="btnDisplayMusicRecommendationClick"
+            android:text="Show Rec"
+            android:layout_alignBaseline="@+id/btnMusic"
+            android:layout_alignBottom="@+id/btnMusic"
+            android:layout_alignLeft="@+id/btnRecommendation"
+            android:layout_alignStart="@+id/btnRecommendation" />
+
+        <TextView
+            android:id="@+id/textPersonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnRecommendation"
+            android:layout_alignParentTop="true"
+            android:text="TextView"
+            android:textColor="@color/font"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnJournal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstyle"
+            android:onClick="btnJournalClick"
+            android:text="Add Journal"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="204dp"
+            android:layout_alignBaseline="@+id/btnDisplayJournal"
+            android:layout_alignBottom="@+id/btnDisplayJournal"
+            android:layout_alignLeft="@+id/btnDisplayFavMusic"
+            android:layout_alignStart="@+id/btnDisplayFavMusic" />
+
+        <Button
+            android:id="@+id/btnDisplayJournal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonstyle"
+            android:onClick="btnDisplayJournalClick"
+            android:text="Display Journal"
+            tools:layout_editor_absoluteY="342dp"
+            tools:layout_editor_absoluteX="54dp"
+            android:layout_marginTop="29dp"
+            android:layout_below="@+id/btnDisplayFavMusic"
+            android:layout_alignLeft="@+id/btnDisplayRecommendation"
+            android:layout_alignStart="@+id/btnDisplayRecommendation" />
+
+
+    <Button
+        android:id="@+id/btPlayStoreMusic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonstyle"
+        android:onClick="btnPlayStoreMusicClick"
+        android:text="Play Store Music"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="356dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/btnJournal"
+        android:layout_alignStart="@+id/btnJournal"
+        android:layout_marginBottom="24dp" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

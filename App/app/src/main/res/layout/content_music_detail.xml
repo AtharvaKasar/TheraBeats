@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.themagicofmusic.beatrecognizer.MusicDetailActivity"
+    tools:showIn="@layout/activity_music_detail">
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="345dp"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editMusicID"
+            android:layout_alignParentLeft="true"
+            android:text="ID"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editMusicID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true">
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Code"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignBaseline="@+id/editMusicName"
+            android:layout_alignBottom="@+id/editMusicName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:id="@+id/editMusicName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:ems="10"
+            android:inputType="text"
+            android:layout_below="@+id/editMusicID"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editMusicName"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/editMusicName"
+            android:layout_marginBottom="86dp"
+            android:onClick="btnStopMusicClick"
+            android:text="Stop" />
+
+        <Button
+            android:id="@+id/btnAddToFavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnAddFavoriteMusicClick"
+            android:text="Add to Fav"
+            android:layout_alignBaseline="@+id/btnStop"
+            android:layout_alignBottom="@+id/btnStop"
+            android:layout_toRightOf="@+id/btnStop"
+            android:layout_toEndOf="@+id/btnStop" />
+
+        <Button
+            android:id="@+id/btnPlayMusic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btnStop"
+            android:layout_toLeftOf="@+id/btnStop"
+            android:layout_toStartOf="@+id/btnStop"
+            android:onClick="btnPlayMusicClick"
+            android:text="Play" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

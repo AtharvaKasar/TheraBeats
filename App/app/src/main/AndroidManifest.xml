@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.themagicofmusic.beatrecognizer">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_music"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_music"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".BeatRecognizerMain"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Dashboard"
+            android:label="@string/title_activity_dashboard"
+            android:parentActivityName=".BeatRecognizerMain"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.themagicofmusic.beatrecognizer.BeatRecognizerMain" />
+        </activity>
+        <activity
+            android:name=".PersonProfileActivity"
+            android:label="@string/title_activity_person_profile"
+            android:parentActivityName=".BeatRecognizerMain"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.themagicofmusic.beatrecognizer.BeatRecognizerMain" />
+        </activity>
+        <activity android:name=".PersonDetailActivity" />
+        <activity android:name=".DisplayMusic" />
+        <activity android:name=".DisplayPersons" />
+        <activity android:name=".DisplayBeats" />
+        <activity
+            android:name=".AddPerson"
+            android:label="@string/title_activity_add_person"
+            android:parentActivityName=".BeatRecognizerMain"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.themagicofmusic.beatrecognizer.BeatRecognizerMain" />
+        </activity>
+        <activity
+            android:name=".AddBeatType"
+            android:label="@string/title_activity_add_beat_type"
+            android:parentActivityName=".BeatRecognizerMain"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.themagicofmusic.beatrecognizer.BeatRecognizerMain" />
+        </activity>
+        <activity android:name=".BeatDetailActivity" />
+        <activity
+            android:name=".AddMusic"
+            android:label="@string/title_activity_add_music"
+             />
+        <activity
+            android:name=".MusicDetailActivity"
+            android:label="@string/title_activity_music_detail"
+             />
+        <activity android:name=".PlayMusicActivity" />
+
+        <service
+            android:name="com.themagicofmusic.services.MediaPlayerService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name="com.themagicofmusic.services.BearRecognizerService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".DisplayMusicRecommendation"
+            android:label="@string/title_activity_display_music_recommendation" />
+        <activity
+            android:name=".DisplayJournal"
+            android:label="@string/title_activity_display_journal"
+            />
+        <activity
+            android:name=".DisplayFavoriteMusic"
+            android:label="@string/title_activity_display_favorite_music" />
+        <activity
+            android:name=".AddJournal"
+            android:label="@string/title_activity_add_journal"
+             />
+        <activity
+            android:name=".Dashboard2Activity"
+            android:label="@string/title_activity_dashboard2"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".MusicFeatureActivity"
+            android:label="@string/title_activity_music_feature"
+             />
+        <activity
+            android:name=".DisplayPlayStoreMusicActivity"
+            android:label="@string/title_activity_display_play_store_music"
+             />
+        <activity
+            android:name=".JournalDetailActivity"
+            android:label="@string/title_activity_journal_detail"
+             />
+        <activity
+            android:name=".DisplayVideos"
+            android:label="@string/title_activity_display_videos"
+            />
+    </application>
+
+</manifest>
